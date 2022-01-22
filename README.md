@@ -17,9 +17,11 @@ For each test case your program must write the minimal sum of distances from the
 to each one of his relatives. The distance between two street numbers si and sj is dij = |si − sj |.
 
 Sample Input
-2 \n
-2 2 4 
-3 2 4 6 
+2
+
+2 2 4
+
+3 2 4 6
 
 Sample Output
 2
