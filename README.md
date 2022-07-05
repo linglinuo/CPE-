@@ -312,7 +312,7 @@ one in alphabetical order.
         nw
         et
 
-11069 Common Permutation
+11069 Sort! Sort!! and Sort!!!
 ------------------------------
 
 Hmm! Here you are asked to do a simple sorting. You will be given N numbers and a positive integer
