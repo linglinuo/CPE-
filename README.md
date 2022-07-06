@@ -131,6 +131,28 @@ that would result from adding the two numbers, in the format shown below.
         3 carry operations.
         1 carry operation.
         
+10405 Jolly Jumpers
+---------------------------
+A sequence of n > 0 integers is called a jolly jumper if the absolute values of the difference between
+successive elements take on all the values 1 through n − 1. For instance,   
+1 4 2 3   
+is a jolly jumper, because the absolutes differences are 3, 2, and 1 respectively. The definition implies
+that any sequence of a single integer is a jolly jumper. You are to write a program to determine whether
+or not each of a number of sequences is a jolly jumper.
+
+### Input
+Each line of input contains an integer n ≤ 3000 followed by n integers representing the sequence.
+
+### Output
+For each line of input, generate a line of output saying ‘Jolly’ or ‘Not jolly’
+
+### Sample Input
+        4 1 4 2 3
+        5 1 4 2 -1 6
+### Sample Output
+        Jolly
+        Not jolly
+        
 10406 Vito's family
 ----------------------------------------------------------------------------------------------------
 
@@ -480,3 +502,58 @@ The text must be output exactly as it was input except that:
         is the question''.
         The programming contestant replied: ``I must disagree.
         To `C' or not to `C', that is The Question!''
+        
+22801 Doom's Day Algorithm
+------------------------------
+
+No. Doom’s day algorithm is not a method to compute which day the world will end. It is an
+algorithm created by the mathematician John Horton Conway, to calculate which day of the week
+(Monday, Tuesday, etc.) corresponds to a certain date.   
+This algorithm is based in the idea of the doomsday, a certain day of the week which always
+occurs in the same dates. For example, 4/4 (the 4th of April), 6/6 (the 6th of June), 8/8 (the 8th of
+August), 10/10 (the 10th of October) and 12/12 (the 12th of December) are dates which always occur
+in doomsday. All years have their own doomsday.   
+In year 2011, doomsday is Monday. So all of 4/4, 6/6, 8/8, 10/10 and 12/12 are Mondays. Using
+that information, you can easily compute any other date. For example, the 13th of December 2011 will
+be Tuesday, the 14th of December 2011 will be Wednesday, etc.   
+Other days which occur on doomsday are 5/9, 9/5, 7/11 and 11/7. Also, in leap years, we have
+the following doomsdays: 1/11 (the 11th of January) and 2/22 (the 22nd of Febrary), and in non-leap
+years 1/10 and 2/21.   
+Given a date of year 2011, you have to compute which day of the week it occurs.
+
+### Input
+
+The input can contain different test cases. The first line of the input indicates the number of test cases.   
+For each test case, there is a line with two numbers: M D. M represents the month (from 1 to 12)
+and D represents the day (from 1 to 31). The date will always be valid.
+
+
+### Output
+
+For each test case, you have to output the day of the week where that date occurs in 2011. The days
+of the week will be: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday.
+
+### Sample Input
+
+        8
+        1 6
+        2 28
+        4 5
+        5 26
+        8 1
+        11 1
+        12 25
+        12 31
+        
+### Sample Output
+
+        Thursday
+        Monday
+        Tuesday
+        Thursday
+        Monday
+        Tuesday
+        Sunday
+        Saturday
+        
+        
