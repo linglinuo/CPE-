@@ -209,6 +209,46 @@ opponent’s army. Each output should be in seperate line.
     4
     100
 
+10408 What is the probability!!!
+------------------------------------------------------------------------------------------------
+Probability has always been an integrated part of computer algorithms. Where the deterministic
+algorithms have failed to solve a problem in short time, probabilistic algorithms have come to the
+rescue. In this problem we are not dealing with any probabilistic algorithm. We will just try to
+determine the winning probability of a certain player.   
+A game is played by throwing a dice like thing (it should not be assumed that it has six sides like
+an ordinary dice). If a certain event occurs when a player throws the dice (such as getting a 3, getting
+green side on top or whatever) he is declared the winner. There can be N such player. So the first
+player will throw the dice, then the second and at last the N-th player and again the first player and
+so on. When a player gets the desired event he or she is declared winner and playing stops. You will
+have to determine the winning probability of one (The I-th) of these players.
+
+### Input
+
+Input will contain an integer S (S ≤ 1000) at first, which indicates how many sets of inputs are there.
+The next S lines will contain S sets of inputs. Each line contain an integer N (N ≤ 1000) which denotes
+the number players, a floating point number p which indicates the probability of the happening of a
+successful event in a single throw (If success means getting 3 then p is the probability of getting 3 in
+a single throw. For a normal dice the probability of getting 3 is 1/6), and I (I ≤ N) the serial of the
+player whose winning probability is to be determined (Serial no varies from 1 to N). You can assume
+that no invalid probability (p) value will be given as input.
+
+### Output
+
+For each set of input, output in a single line the probability of the I-th player to win. The output
+floating point number will always have four digits after the decimal point as shown in the sample
+output.
+
+### Sample Input
+
+    2
+    2 0.166666 1
+    2 0.166666 2
+    
+### Sample Output
+
+    0.5455
+    0.4545
+
 10414 Bangla Numbers
 ------------------------------------------------------------------------------------------------
 Bangla numbers normally use ’kuti’ (10000000), ’lakh’ (100000), ’hajar’ (1000), ’shata’ (100) while
@@ -234,6 +274,47 @@ adjustment followed by the converted text.
 
     1. 23 hajar 7 shata 64
     2. 45 lakh 89 hajar 7 shata 45 kuti 89 lakh 73 hajar 9 shata 58
+
+10417 The hotel with infinite rooms
+------------------------------------------------------------------------------------------------
+The city of HaluaRuti has a strange hotel with infinite rooms. The groups that come to this hotel
+follow the following rules:   
+a) At the same time only members of one group can rent the hotel.   
+b) Each group comes in the morning of the check-in day and leaves the hotel in the evening of the
+check-out day.   
+c) Another group comes in the very next morning after the previous group has left the hotel.   
+d) A very important property of the incoming group is that it has one more member than its previous
+group unless it is the starting group. You will be given the no of members of the starting group.   
+e) A group with n members stays for n days in the hotel. For example, if a group of four members
+comes on 1st August in the morning, it will leave the hotel on 4th August in the evening and the
+next group of five members will come on 5th August in the morning and stay for five days and
+so on.   
+Given the initial group size you will have to find the group size staying in the hotel on a specified
+day.   
+
+### Input
+
+The input contains round numbers S (1 ≤ S ≤ 10000) and D (1 ≤ D < $10^15$) in every line. S denotes
+the initial size of the group and D denotes that you will have to find the group size staying in the hotel
+on D-th day (starting from 1). All the input and output integers will be less than $10^15$. A group size S
+means that on the first day a group of S members come to the hotel and stays for S days then comes
+a group of S + 1 members according to the previously described rules and so on.
+
+### Output
+
+For each line of input, print on a single line the size of the group staying in the hotel on the D-th day.
+
+### Sample Input
+
+    1 6
+    3 10
+    3 14
+    
+### Sample Output
+
+    3
+    5
+    6
 
 10425 Decode the Mad man
 ----------------------------
