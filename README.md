@@ -294,9 +294,9 @@ day.
 
 ### Input
 
-The input contains round numbers S (1 ≤ S ≤ 10000) and D (1 ≤ D < $10^15$) in every line. S denotes
+The input contains round numbers S (1 ≤ S ≤ 10000) and D (1 ≤ D < $10^{15}$) in every line. S denotes
 the initial size of the group and D denotes that you will have to find the group size staying in the hotel
-on D-th day (starting from 1). All the input and output integers will be less than $10^15$. A group size S
+on D-th day (starting from 1). All the input and output integers will be less than $10^{15}$. A group size S
 means that on the first day a group of S members come to the hotel and stays for S days then comes
 a group of S + 1 members according to the previously described rules and so on.
 
