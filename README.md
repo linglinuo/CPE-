@@ -531,6 +531,63 @@ line containing g(n).
         2
         2
 
+10478 Symmetric Matrix
+--------------------
+You‘re given a square matrix M. Elements of this matrix are Mij : {0 < i < n, 0 < j < n}. In this
+problem you’ll have to find out whether the given matrix is symmetric or not.
+Definition: Symmetric matrix is such a matrix that all elements of it are non-negative and symmetric
+with relation to the center of this matrix. Any other matrix is considered to be non-symmetric. For
+example:
+
+$$
+M = \left[
+\begin{matrix}
+5&1&3 \\
+2&0&2 \\
+3&1&5
+\end {matrix}
+\right]
+\tag{3}
+$$
+is symmetric
+M =
+[
+5 1 3
+2 0 2
+0 1 5
+]
+is not symmetric, because 3 ̸= 0
+All you have to do is to find whether the matrix is symmetric or not. Elements of a matrix given
+in the input are −2
+32 ≤ Mij ≤ 2
+32 and 0 < n ≤ 100.
+
+
+### Input
+
+Each line of input contains a single positive integer n at most 2,000,000,000. Input is terminated
+by n = 0 which should not be processed.
+
+### Output
+
+For each such integer, you are to output a single
+line containing g(n).
+
+### Sample Input
+
+        2
+        11
+        47
+        1234567892
+        0
+        
+### Sample Output
+
+        2
+        2
+        2
+        2
+
 10567 Common Permutation
 ------------------------------
 
