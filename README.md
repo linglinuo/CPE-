@@ -340,7 +340,7 @@ For each line of input print a single integer in one line denoting the displacem
 ### Sample Input
 
     0 0
-        5 12
+    5 12
     
 ### Sample Output
 
