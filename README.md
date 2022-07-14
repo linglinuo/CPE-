@@ -192,6 +192,7 @@ Steps : Example
 6. Convert the hexadecimal interpretation of N to its binary representation : $X_2$ = 1001100101   
 7. Let $b_2$ be equal to the number of 1’s in the last binary representation : $b_2$ = 5   
 8. The encryption is the result of M xor $(b_1 ∗ b_2)$ : 265 xor (3*5) = 262   
+   
 This student failed Computational Organization, thats why this student asked the judges of ITESM
 Campus Monterrey internal ACM programming Contest to ask for the numbers of 1’s bits of this two
 representations so that he can continue playing.   
