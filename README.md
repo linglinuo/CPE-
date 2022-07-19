@@ -532,6 +532,87 @@ and output it in a single line.
         1
         5
 
+10419 Divide, But Not Quite Conquer!
+------------------------------------
+Your goal in this problem is to divide a certain integer n by another integer m until n = 1, obtaining
+a sequence of numbers. Lets call a[i] each number of this sequence, and let’s say it has k numbers (i.e.
+you must do k − 1 succesive divisions to reach n = 1). You can only have this sequence if the following
+restrictions are met:   
+• a[1] = n, a[i] = a[i − 1] ÷ m, for all 1 < i ≤ k   
+• a[i] is divisible by m (that is, a[i] mod m = 0) for all 1 ≤ i < k   
+• a[1] > a[2] > a[3] > . . . > a[k]   
+For instance, if n = 125 and m = 5, you have 125, 25, 5 and 1 (you did 3 divisions: 125/5, 25/5
+and 5/5). So, k = 4, a[1] = 125, a[2] = 25, a[3] = 5 and a[4] = 1.   
+If n = 30 and m = 3, you have 30, 10, 3 and 1. But a[2] = 10, and 10 mod 3 = 1, so there is no
+sequence because it violates restriction 2. When the sequence doesn’t exist we think it’s not fun and,
+thus, very boring!
+
+### Input
+
+The input will consist on an arbitrary number of lines. Each line will consist of two non-negative
+integers n, m which are both less than 2000000000. You must read until you reach the end of file.
+
+### Output
+
+For each pair n, m you must print the correspondent sequence a (as defined above) in a single line, with
+each adjacent numbers of the sequence separated by a single space. In the case the sequence doesn’t
+exist because it violates some restriction, just print the phrase ‘Boring!’ in a single line (without the
+quotes).
+
+### Sample Input
+
+        125 5
+        30 3
+        80 2
+        81 3
+
+### Sample Output
+
+        125 25 5 1
+        Boring!
+        Boring!
+        81 27 9 3 1
+
+10428 Simply Emirp
+------------------------------------
+An integer greater than 1 is called a prime number if its only positive divisors (factors) are 1 and itself.
+Prime numbers have been studied over the years by a lot of mathematicians. Applications of prime
+numbers arise in Cryptography and Coding Theory among others.
+Have you tried reversing a prime? For most primes, you get a composite (43 becomes 34). An
+Emirp (Prime spelt backwards) is a Prime that gives you a different Prime when its digits are reversed.
+For example, 17 is Emirp because 17 as well as 71 are Prime.
+In this problem, you have to decide whether a number N is Non-prime or Prime or Emirp. Assume
+that 1 < N < 1000000.
+Interestingly, Emirps are not new to NTU students. We have been boarding 199 and 179 buses for
+quite a long time!
+
+### Input
+
+Input consists of several lines specifying values for N.
+
+### Output
+
+For each N given in the input, output should contain one of the following:   
+1. ‘N is not prime.’, if N is not a Prime number.   
+2. ‘N is prime.’, if N is Prime and N is not Emirp.   
+3. ‘N is emirp.’, if N is Emirp.   
+
+### Sample Input
+
+        17
+        18
+        19
+        179
+        199
+
+### Sample Output
+
+        17 is emirp.
+        18 is not prime.
+        19 is prime.
+        179 is emirp.
+        199 is emirp.
+
 10453 Odd Sum
 ------------------------------------
 Given a range [a, b], you are to find the summation of all the odd integers in this range. For example,
@@ -592,6 +673,90 @@ output a line containing “impossible”. Recall that football scores are alway
 
         30 10
         impossible
+
+10456 Largest Square
+------------------------------------
+Given a rectangular grid of characters you have to find out the length of a side of the largest square such
+that all the characters of the square are same and the center [intersecting point of the two diagonals]
+of the square is at location (r, c). The height and width of the grid is M and N respectively. Upper
+left corner and lower right corner of the grid will be denoted by (0, 0) and (M − 1, N − 1) respectively.
+Consider the grid of characters given below. Given the location (1, 2) the length of a side of the largest
+square is 3.   
+abbbaaaaaa   
+abbbaaaaaa   
+abbbaaaaaa   
+aaaaaaaaaa   
+aaaaaaaaaa   
+aaccaaaaaa   
+aaccaaaaaa   
+
+### Input
+
+The input starts with a line containing a single integer T (< 21). This is followed by T test cases. The
+first line of each of them will contain three integers M, N and Q (< 21) separated by a space where
+M, N denotes the dimension of the grid. Next follows M lines each containing N characters. Finally,
+there will be Q lines each containing two integers r and c. The value of M and N will be at most 100.
+
+### Output
+
+For each test case in the input produce Q + 1 lines of output. In the first line print the value of M, N
+and Q in that order separated by single space. In the next Q lines, output the length of a side of the
+largest square in the corresponding grid for each (r, c) pair in the input.
+
+### Sample Input
+
+        1
+        7 10 4
+        abbbaaaaaa
+        abbbaaaaaa
+        abbbaaaaaa
+        aaaaaaaaaa
+        aaaaaaaaaa
+        aaccaaaaaa
+        aaccaaaaaa
+        1 2
+        2 4
+        4 6
+        5 2
+
+### Sample Output
+
+        7 10 4
+        3
+        1
+        5
+        1
+
+10458 2 the 9s
+------------------------------------
+A well-known trick to know if an integer N is a multiple of nine is to compute the sum S of its digits.   
+If S is a multiple of nine, then so is N. This is a recursive test, and the depth of the recursion needed
+to obtain the answer on N is called the 9-degree of N.   
+Your job is, given a positive number N, determine if it is a multiple of nine and, if it is, its 9-degree.
+
+### Input
+
+The input is a file such that each line contains a positive number. A line containing the number 0 is
+the end of the input. The given numbers can contain up to 1000 digits.
+
+### Output
+
+The output of the program shall indicate, for each input number, if it is a multiple of nine, and in case
+it is, the value of its nine-degree. See the sample output for an example of the expected formatting of
+the output.
+
+### Sample Input
+
+        999999999999999999999
+        9
+        9999999999999999999999999999998
+        0
+
+### Sample Output
+
+        999999999999999999999 is a multiple of 9 and has 9-degree 3.
+        9 is a multiple of 9 and has 9-degree 1.
+        9999999999999999999999999999998 is not a multiple of 9.
 
 10460 You can say 11
 ------------------------------------
@@ -781,6 +946,60 @@ many square numbers are there between a and b (inclusive).
         2
         3
 
+10517 Hartals
+--------------------
+A social research organization has determined a simple set of parameters to simulate the behavior of
+the political parties of our country. One of the parameters is a positive integer h (called the hartal
+parameter) that denotes the average number of days between two successive hartals (strikes) called by
+the corresponding party. Though the parameter is far too simple to be flawless, it can still be used to
+forecast the damages caused by hartals. The following example will give you a clear idea:
+Consider three political parties. Assume $h_1$ = 3, $h_2$ = 4 and $h_3$ = 8 where $h_i$
+is the hartal parameter
+for party i (i = 1, 2, 3). Now, we will simulate the behavior of these three parties for N = 14 days.
+One must always start the simulation on a Sunday and assume that there will be no hartals on weekly
+holidays (on Fridays and Saturdays).
+   
+![image](https://user-images.githubusercontent.com/98205711/179663212-8dda9c38-933c-435b-8c87-9db167c04374.png)
+   
+The simulation above shows that there will be exactly 5 hartals (on days 3, 4, 8, 9 and 12) in 14
+days. There will be no hartal on day 6 since it is a Friday. Hence we lose 5 working days in 2 weeks.
+In this problem, given the hartal parameters for several political parties and the value of N, your
+job is to determine the number of working days we lose in those N days.
+
+### Input
+
+The first line of the input consists of a single integer T giving the number of test cases to follow.   
+The first line of each test case contains an integer N (7 ≤ N ≤ 3650) giving the number of days over
+which the simulation must be run. The next line contains another integer P (1 ≤ P ≤ 100) representing
+the number of political parties in this case. The ith of the next P lines contains a positive integer $h_i$
+(which will never be a multiple of 7) giving the hartal parameter for party i (1 ≤ i ≤ P).
+
+### Output
+
+For each test case in the input output the number of working days we lose. Each output must be on a
+separate line.
+
+
+### Sample Input
+
+        2
+        14
+        3
+        3
+        4
+        8
+        100
+        4
+        12
+        15
+        25
+        40
+        
+### Sample Output
+
+        5
+        15
+
 10567 Common Permutation
 ------------------------------
 
@@ -880,6 +1099,52 @@ the last two zeroes of the input file in the output file also.
         8
         14
         0 0
+
+11076 GCD
+------------------------------
+
+Given the value of N, you will have to find the value of G. The definition of G is given below:   
+![image](https://user-images.githubusercontent.com/98205711/179712993-71e08945-b784-404b-b5c0-ba423e555800.png)
+   
+Here GCD(i, j) means the greatest common divisor of integer i and integer j.   
+For those who have trouble understanding summation notation, the meaning of G is given in the
+following code:   
+
+        G=0;
+        for(i=1;i<N;i++)
+        for(j=i+1;j<=N;j++)
+        {
+        G+=GCD(i,j);
+        }
+        /*Here GCD() is a function that finds
+        the greatest common divisor of the two
+        input numbers*/
+
+
+### Input
+
+The input file contains at most 100 lines of inputs. Each line contains an integer N (1 < N < 501).
+The meaning of N is given in the problem statement. Input is terminated by a line containing a single
+zero. This zero should not be processed.
+
+
+### Output
+
+For each line of input produce one line of output. This line contains the value of G for corresponding
+N
+
+### Sample Input
+
+        10
+        100
+        500
+        0
+
+### Sample Output
+
+        67
+        13015
+        442011
 
 22131 TEX Quotes
 ------------------------------
