@@ -532,6 +532,47 @@ and output it in a single line.
         1
         5
 
+10419 Divide, But Not Quite Conquer!
+------------------------------------
+Your goal in this problem is to divide a certain integer n by another integer m until n = 1, obtaining
+a sequence of numbers. Lets call a[i] each number of this sequence, and let’s say it has k numbers (i.e.
+you must do k − 1 succesive divisions to reach n = 1). You can only have this sequence if the following
+restrictions are met:   
+• a[1] = n, a[i] = a[i − 1] ÷ m, for all 1 < i ≤ k   
+• a[i] is divisible by m (that is, a[i] mod m = 0) for all 1 ≤ i < k   
+• a[1] > a[2] > a[3] > . . . > a[k]   
+For instance, if n = 125 and m = 5, you have 125, 25, 5 and 1 (you did 3 divisions: 125/5, 25/5
+and 5/5). So, k = 4, a[1] = 125, a[2] = 25, a[3] = 5 and a[4] = 1.   
+If n = 30 and m = 3, you have 30, 10, 3 and 1. But a[2] = 10, and 10 mod 3 = 1, so there is no
+sequence because it violates restriction 2. When the sequence doesn’t exist we think it’s not fun and,
+thus, very boring!
+
+### Input
+
+The input will consist on an arbitrary number of lines. Each line will consist of two non-negative
+integers n, m which are both less than 2000000000. You must read until you reach the end of file.
+
+### Output
+
+For each pair n, m you must print the correspondent sequence a (as defined above) in a single line, with
+each adjacent numbers of the sequence separated by a single space. In the case the sequence doesn’t
+exist because it violates some restriction, just print the phrase ‘Boring!’ in a single line (without the
+quotes).
+
+### Sample Input
+
+        125 5
+        30 3
+        80 2
+        81 3
+
+### Sample Output
+
+        125 25 5 1
+        Boring!
+        Boring!
+        81 27 9 3 1
+
 10453 Odd Sum
 ------------------------------------
 Given a range [a, b], you are to find the summation of all the odd integers in this range. For example,
@@ -780,6 +821,60 @@ many square numbers are there between a and b (inclusive).
 
         2
         3
+
+10517 Hartals
+--------------------
+A social research organization has determined a simple set of parameters to simulate the behavior of
+the political parties of our country. One of the parameters is a positive integer h (called the hartal
+parameter) that denotes the average number of days between two successive hartals (strikes) called by
+the corresponding party. Though the parameter is far too simple to be flawless, it can still be used to
+forecast the damages caused by hartals. The following example will give you a clear idea:
+Consider three political parties. Assume $h_1$ = 3, $h_2$ = 4 and $h_3$ = 8 where $h_i$
+is the hartal parameter
+for party i (i = 1, 2, 3). Now, we will simulate the behavior of these three parties for N = 14 days.
+One must always start the simulation on a Sunday and assume that there will be no hartals on weekly
+holidays (on Fridays and Saturdays).
+   
+![image](https://user-images.githubusercontent.com/98205711/179663212-8dda9c38-933c-435b-8c87-9db167c04374.png)
+   
+The simulation above shows that there will be exactly 5 hartals (on days 3, 4, 8, 9 and 12) in 14
+days. There will be no hartal on day 6 since it is a Friday. Hence we lose 5 working days in 2 weeks.
+In this problem, given the hartal parameters for several political parties and the value of N, your
+job is to determine the number of working days we lose in those N days.
+
+### Input
+
+The first line of the input consists of a single integer T giving the number of test cases to follow.   
+The first line of each test case contains an integer N (7 ≤ N ≤ 3650) giving the number of days over
+which the simulation must be run. The next line contains another integer P (1 ≤ P ≤ 100) representing
+the number of political parties in this case. The ith of the next P lines contains a positive integer $h_i$
+(which will never be a multiple of 7) giving the hartal parameter for party i (1 ≤ i ≤ P).
+
+### Output
+
+For each test case in the input output the number of working days we lose. Each output must be on a
+separate line.
+
+
+### Sample Input
+
+        2
+        14
+        3
+        3
+        4
+        8
+        100
+        4
+        12
+        15
+        25
+        40
+        
+### Sample Output
+
+        5
+        15
 
 10567 Common Permutation
 ------------------------------
