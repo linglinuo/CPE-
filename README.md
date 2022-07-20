@@ -457,6 +457,45 @@ For each line of input, print on a single line the size of the group staying in 
     5
     6
 
+10424 Satellites
+------------------------------------------------------------------------------------------------
+The radius of earth is 6440 Kilometer. There are many Satellites and Asteroids moving around the earth. If two Satellites
+create an angle with the center of earth, can you find out
+the distance between them? By distance we mean both the
+arc and chord distances. Both satellites are on the same orbit
+(However, please consider that they are revolving on a circular
+path rather than an elliptical path).
+
+![image](https://user-images.githubusercontent.com/98205711/179960815-0f73e45f-373a-417a-80b6-90d278e847a6.png)
+
+
+### Input
+
+The input file will contain one or more test cases.   
+Each test case consists of one line containing two-integer
+s and a, and a string ‘min’ or ‘deg’. Here s is the distance of
+the satellite from the surface of the earth and a is the angle
+that the satellites make with the center of earth. It may be in minutes (′) or in degrees (◦). Remember
+that the same line will never contain minute and degree at a time.
+
+### Output
+
+For each test case, print one line containing the required distances i.e. both arc distance and chord
+distance respectively between two satellites in Kilometer. The distance will be a floating-point value
+with six digits after decimal point.
+
+### Sample Input
+
+    500 30 deg
+    700 60 min
+    200 45 deg
+    
+### Sample Output
+
+    3633.775503 3592.408346
+    124.616509 124.614927
+    5215.043805 5082.035982
+
 10425 Decode the Mad man
 ----------------------------
 Once in BUET, an old professor had gone completely mad. He started talking with some peculiar
