@@ -1087,6 +1087,49 @@ many square numbers are there between a and b (inclusive).
         2
         3
 
+10510 Super long sums
+--------------------
+The creators of a new programming language D++ have found out that whatever limit for SuperLongInt
+type they make, sometimes programmers need to operate even larger numbers. A limit of 1000 digits
+is so small... You have to find the sum of two numbers with maximal size of 1.000.000 digits.
+
+
+### Input
+
+The first line of a input file is an integer N, then a blank line followed by N input blocks. The first line
+of an each input block contains a single number M (1 ≤ M ≤ 1000000) fi the length of the integers (in
+order to make their lengths equal, some leading zeroes can be added). It is followed by these integers
+written in columns. That is, the next M lines contain two digits each, divided by a space. Each of the
+two given integers is not less than 1, and the length of their sum does not exceed M.   
+There is a blank line between input blocks.
+
+### Output
+
+Each output block should contain exactly M digits in a single line representing the sum of these two
+integers.   
+There is a blank line between output blocks.
+
+### Sample Input
+
+        2
+        
+        4
+        0 4
+        4 2
+        6 8
+        3 7
+        
+        3
+        3 0
+        7 9
+        2 8
+        
+### Sample Output
+
+        4750
+        
+        470
+
 10517 Hartals
 --------------------
 A social research organization has determined a simple set of parameters to simulate the behavior of
@@ -1140,6 +1183,88 @@ separate line.
 
         5
         15
+
+10552 Automated Judge Script
+--------------------
+The judges from the programming contests are known to be very mean and very lazy. We, judges, want
+less work and more Wrong Answers! So, we’d like you to help us and write an automated judge script
+to judge solution runs from teams all over the world. All you have to do is write a program which
+receives the standard solution and a team output and gives as answer one of the following messages:
+“Accepted”, “Presentation Error” or “Wrong Answer”. We define each one as:   
+Accepted: As we are very mean judges, we only want you to give ‘Accepted’ as answer if the team
+output matches the standard solution integrally. That is, ALL characters must match and must
+be in the same order.   
+Presentation Error: We want you to give ‘Presentation Error’ if all NUMERIC characters match
+(and in the same order) but there is at least one non-numeric character wrong (or in wrong order).
+For instance, ‘15 0’ and ‘150’ would receive a ‘Presentation Error’, whereas ‘15 0’ and ‘1 0’
+would not (it would receive ‘Wrong Answer’, see bellow).   
+Wrong Answer: If the team output could not be classified as any of the two above, then you have no
+option but to give ‘Wrong Answer’ as an answer!   
+
+### Input
+
+The input will consist of an arbitrary number of input sets. Each input set begins with a positive
+integer n < 100, alone in a line, which describes the number of lines of the standard solution. The next
+n lines contain the standard solution. Then there is a positive integer m < 100, alone in a line, which
+describes the number of lines of the team output. The next m lines contain the team output. The
+input is terminated by a value of n = 0, and should not be processed.   
+No line will have more than 120 characters.
+
+### Output
+
+For each set you should output one of the following lines:   
+Run #x: Accepted   
+Run #x: Presentation Error   
+Run #x: Wrong Answer   
+Where x stands for the number of the input set (starting from 1).   
+
+
+### Sample Input
+
+        2
+        The answer is: 10
+        The answer is: 5
+        2
+        The answer is: 10
+        The answer is: 5
+        2
+        The answer is: 10
+        The answer is: 5
+        2
+        The answer is: 10
+        The answer is: 15
+        2
+        The answer is: 10
+        The answer is: 5
+        2
+        The answer is: 10
+        The answer is:  5
+        3
+        Input Set #1: YES
+        Input Set #2: NO
+        Input Set #3: NO
+        3
+        Input Set #0: YES
+        Input Set #1: NO
+        Input Set #2: NO
+        1
+        1 0 1 0
+        1
+        1010
+        1
+        The judges are mean!
+        1
+        The judges are good!
+        0
+        
+### Sample Output
+
+        Run #1: Accepted
+        Run #2: Wrong Answer
+        Run #3: Presentation Error
+        Run #4: Wrong Answer
+        Run #5: Presentation Error
+        Run #6: Presentation Error
 
 10566 Fourth Point!!
 --------------------
