@@ -1184,6 +1184,30 @@ separate line.
         5
         15
 
+10526 Product
+--------------------
+The problem is to multiply two integers X, Y . (0 ≤ X, Y < $10^{250}$)
+
+### Input
+
+The input will consist of a set of pairs of lines. Each line in pair contains one multiplyer.
+
+### Output
+
+For each input pair of lines the output line should consist one integer the product.
+
+### Sample Input
+
+        12
+        12
+        2
+        2222222222222222222222222222
+        
+### Sample Output
+
+        144
+        4444444444444444444444444444
+
 10552 Automated Judge Script
 --------------------
 The judges from the programming contests are known to be very mean and very lazy. We, judges, want
