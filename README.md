@@ -673,6 +673,41 @@ quotes).
         Boring!
         81 27 9 3 1
 
+10423 The Largest/Smallest Box ...
+------------------------------------
+In the following figure you can see a rectangular card. The width of the card is W and length of the
+card is L and thickness is zero. Four (x ∗ x) squares are cut from the four corners of the card shown by
+the black dotted lines. Then the card is folded along the magenta lines to make a box without a cover.   
+![image](https://user-images.githubusercontent.com/98205711/185130427-f36be005-f1db-4465-9f67-9d3d62d9b6f6.png)
+   
+   Given the width and height of the box, you will have to find the value of x for which the box has
+maximum and minimum volume.
+
+
+### Input
+
+The input file contains several lines of input. Each line contains two positive floating-point numbers L
+(0 < L < 10000) and W (0 < W < 10000); which indicate the length and width of the card respectively
+
+### Output
+
+For each line of input you should give one line of output, which should contain two or more floatingpoint numbers separated by a single space. The floating-point numbers should contain three digits
+after the decimal point. The first floating point number indicates the value for which the volume of the
+box is maximum and then the next values (sorted in ascending order) indicate the values for which the
+volume of the box is minimum.
+
+### Sample Input
+
+        1 1
+        2 2
+        3 3
+
+### Sample Output
+
+        0.167 0.000 0.500
+        0.333 0.000 1.000
+        0.500 0.000 1.500
+        
 10428 Simply Emirp
 ------------------------------------
 An integer greater than 1 is called a prime number if its only positive divisors (factors) are 1 and itself.
@@ -1007,6 +1042,49 @@ is the binary representation of I.
         The parity of 1010 is 2 (mod 2).
         The parity of 10101 is 3 (mod 2).
 
+10465 Necklace
+--------------------
+The people of a certain tribe produce circular ceramic discs with equal diameter by some rare clay. A
+necklace is formed by connecting one or more discs. The figure below shows a necklace made with 4
+discs. Its length is 4 times the diameter of each disc   
+![image](https://user-images.githubusercontent.com/98205711/185124996-efd678ef-dc47-414e-afb9-9b182bdf49dc.png)
+   
+The thickness of each disc is fixed. The diameter D and the volume of clay used V has the following
+relationship:   
+![image](https://user-images.githubusercontent.com/98205711/185125393-0337f77c-ee9c-4423-930f-a2ba7d02c7a8.png)
+   
+where $V_0$ is the volume consumed in the baking process, in the same unit of V . When $V ≤ V_0$, no
+ceramic discs can be made. As an example, let $V_{total} = 10$, $V_0 = 1$. If we use it to make 1 disc,
+$V = V_{total} = 10$, D = 0.9. If we divide the clay into 2 parts, the volume of each part $V = V_{total}/2 = 5$,
+and diameter of each disc formed is D′ = 0.3
+√(5 − 1) = 0.6, thus the length of necklace formed this way
+is 1.2.
+As per the above example, it is obvious that the lengths of necklaces differ as the number of discs
+made changes. Please write a program that computes the number of discs one should make so that the
+necklace formed is the longest.
+
+
+### Input
+
+Each line of input contains two numbers, Vtotal ($0 < V_{total} ≤ 60000$) and $V_0 (0 < V_0 ≤ 600)$, as defined
+above. Input ends with a case where $V_{total} = V_0 = 0$.
+
+### Output
+
+Each line of output should give the number of discs one should make so that the necklace formed is the
+longest. If this number is not unique, or no necklaces can be formed at all, output ‘0’ instead.
+
+### Sample Input
+
+        10 1
+        10 2
+        0 0
+        
+### Sample Output
+
+        5
+        0
+        
 10473 Summing Digits
 --------------------
 For a positive integer n, let f(n) denote the
