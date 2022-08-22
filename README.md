@@ -185,18 +185,18 @@ A student from ITESM Campus Monterrey plays with a new encryption method for num
 method consist of the following steps:   
 Steps : Example   
 1. Read the number N to encrypt : M = 265   
-2. Interpret N as a decimal number : $X_1$ = 265 (decimal)   
-3. Convert the decimal interpretation of N to its binary representation : $X_1$ = 100001001 (binary)   
-4. Let $b_1$ be equal to the number of 1’s in this binary representation : $b_1$ = 3   
-5. Interpret N as a Hexadecimal number : $X_2$ = 265 (hexadecimal)   
-6. Convert the hexadecimal interpretation of N to its binary representation : $X_2$ = 1001100101   
-7. Let $b_2$ be equal to the number of 1’s in the last binary representation : $b_2$ = 5   
-8. The encryption is the result of M xor $(b_1 ∗ b_2)$ : 265 xor (3*5) = 262   
+2. Interpret N as a decimal number : $$X_1$$ = 265 (decimal)   
+3. Convert the decimal interpretation of N to its binary representation : $$X_1$$ = 100001001 (binary)   
+4. Let $$b_1$$ be equal to the number of 1’s in this binary representation : $$b_1$$ = 3   
+5. Interpret N as a Hexadecimal number : $$X_2$$ = 265 (hexadecimal)   
+6. Convert the hexadecimal interpretation of N to its binary representation : $$X_2$$ = 1001100101   
+7. Let $$b_2$$ be equal to the number of 1’s in the last binary representation : $$b_2$$ = 5   
+8. The encryption is the result of M xor $$(b_1 ∗ b_2)$$ : 265 xor (3*5) = 262   
    
 This student failed Computational Organization, thats why this student asked the judges of ITESM
 Campus Monterrey internal ACM programming Contest to ask for the numbers of 1’s bits of this two
 representations so that he can continue playing.   
-You have to write a program that read a Number and give as output the number $b_1$ and $b_2$   
+You have to write a program that read a Number and give as output the number $$b_1$$ and $$b_2$$   
 
 ### Input
 
@@ -435,9 +435,9 @@ day.
 
 ### Input
 
-The input contains round numbers S (1 ≤ S ≤ 10000) and D (1 ≤ D < $10^{15}$) in every line. S denotes
+The input contains round numbers S (1 ≤ S ≤ 10000) and D (1 ≤ D < $$10^{15}$$) in every line. S denotes
 the initial size of the group and D denotes that you will have to find the group size staying in the hotel
-on D-th day (starting from 1). All the input and output integers will be less than $10^{15}$. A group size S
+on D-th day (starting from 1). All the input and output integers will be less than $$10^{15}$$. A group size S
 means that on the first day a group of S members come to the hotel and stays for S days then comes
 a group of S + 1 members according to the previously described rules and so on.
 
@@ -600,19 +600,19 @@ is designed to help you remember basic derivation algebra skills, increase the s
 becomes a better place, etc., etc.   
 In 498 you had to evaluate the values of polynomial   
    
-$a_0x^n + a_1x^{n−1} + . . . + a_{n−1}x + a_n$   
+$$a_0x^n + a_1x^{n−1} + . . . + a_{n−1}x + a_n$$   
    
 In this problem you should evaluate its derivative. Remember that derivative is defined as   
    
-$a_0nx^{n−1} + a_1(n − 1)x^{n−2} + . . . + a_{n−1}$   
+$$a_0nx^{n−1} + a_1(n − 1)x^{n−2} + . . . + a_{n−1}$$   
    
-All the input and output data will fit into integer, i.e. its absolute value will be less than $2^31$.
+All the input and output data will fit into integer, i.e. its absolute value will be less than $$2^31$$.
 
 ### Input
 
 Your program should accept an even number of lines of text. Each pair of lines will represent one
 problem. The first line will contain one integer - a value for x. The second line will contain a list of
-integers $a_0, a_1, ..., a_{n−1}, a_n $, which represent a set of polynomial coefficients.
+integers $$a_0, a_1, ..., a_{n−1}, a_n $$, which represent a set of polynomial coefficients.
 Input is terminated by ¡EOF¿.
 
 ### Output
@@ -673,6 +673,41 @@ quotes).
         Boring!
         81 27 9 3 1
 
+10423 The Largest/Smallest Box ...
+------------------------------------
+In the following figure you can see a rectangular card. The width of the card is W and length of the
+card is L and thickness is zero. Four (x ∗ x) squares are cut from the four corners of the card shown by
+the black dotted lines. Then the card is folded along the magenta lines to make a box without a cover.   
+![image](https://user-images.githubusercontent.com/98205711/185130427-f36be005-f1db-4465-9f67-9d3d62d9b6f6.png)
+   
+   Given the width and height of the box, you will have to find the value of x for which the box has
+maximum and minimum volume.
+
+
+### Input
+
+The input file contains several lines of input. Each line contains two positive floating-point numbers L
+(0 < L < 10000) and W (0 < W < 10000); which indicate the length and width of the card respectively
+
+### Output
+
+For each line of input you should give one line of output, which should contain two or more floatingpoint numbers separated by a single space. The floating-point numbers should contain three digits
+after the decimal point. The first floating point number indicates the value for which the volume of the
+box is maximum and then the next values (sorted in ascending order) indicate the values for which the
+volume of the box is minimum.
+
+### Sample Input
+
+        1 1
+        2 2
+        3 3
+
+### Sample Output
+
+        0.167 0.000 0.500
+        0.333 0.000 1.000
+        0.500 0.000 1.500
+        
 10428 Simply Emirp
 ------------------------------------
 An integer greater than 1 is called a prime number if its only positive divisors (factors) are 1 and itself.
@@ -978,7 +1013,7 @@ The output of the program shall indicate, for each input number, if it is a mult
 10461 Parity
 ------------------------------------
 We define the parity of an integer n as the sum of the bits in binary representation computed modulo
-two. As an example, the number 21 = $10101_2$ has three 1s in its binary representation so it has parity
+two. As an example, the number 21 = $$10101_2$$ has three 1s in its binary representation so it has parity
 3(mod2), or 1.   
 In this problem you have to calculate the parity of an integer 1 ≤ I ≤ 2147483647
 
@@ -1007,6 +1042,49 @@ is the binary representation of I.
         The parity of 1010 is 2 (mod 2).
         The parity of 10101 is 3 (mod 2).
 
+10465 Necklace
+--------------------
+The people of a certain tribe produce circular ceramic discs with equal diameter by some rare clay. A
+necklace is formed by connecting one or more discs. The figure below shows a necklace made with 4
+discs. Its length is 4 times the diameter of each disc   
+![image](https://user-images.githubusercontent.com/98205711/185124996-efd678ef-dc47-414e-afb9-9b182bdf49dc.png)
+   
+The thickness of each disc is fixed. The diameter D and the volume of clay used V has the following
+relationship:   
+![image](https://user-images.githubusercontent.com/98205711/185125393-0337f77c-ee9c-4423-930f-a2ba7d02c7a8.png)
+   
+where $$V_0$$ is the volume consumed in the baking process, in the same unit of V . When $$V ≤ V_0$$, no
+ceramic discs can be made. As an example, let $$V_{total} = 10$$, $$V_0 = 1$$. If we use it to make 1 disc,
+$$V = V_{total} = 10$$, D = 0.9. If we divide the clay into 2 parts, the volume of each part $$V = V_{total}/2 = 5$$,
+and diameter of each disc formed is D′ = 0.3
+√(5 − 1) = 0.6, thus the length of necklace formed this way
+is 1.2.
+As per the above example, it is obvious that the lengths of necklaces differ as the number of discs
+made changes. Please write a program that computes the number of discs one should make so that the
+necklace formed is the longest.
+
+
+### Input
+
+Each line of input contains two numbers, $$V_{total} $$($$0 < V_{total} ≤ 60000$$) and $$V_0 (0 < V_0 ≤ 600)$$, as defined
+above. Input ends with a case where $$V_{total} = V_0 = 0$$.
+
+### Output
+
+Each line of output should give the number of discs one should make so that the necklace formed is the
+longest. If this number is not unique, or no necklaces can be formed at all, output ‘0’ instead.
+
+### Sample Input
+
+        10 1
+        10 2
+        0 0
+        
+### Sample Output
+
+        5
+        0
+        
 10473 Summing Digits
 --------------------
 For a positive integer n, let f(n) denote the
@@ -1066,10 +1144,10 @@ M = [ 2 0 2 ]   is symmetric
 &emsp;&emsp;&ensp; 3 1 5   
       
 &emsp;&emsp;&ensp; 5 1 3   
-M = [ 2 0 2 ]   is not symmetric, because $3 \neq 0$  
+M = [ 2 0 2 ]   is not symmetric, because $$3 \neq 0$$  
 &emsp;&emsp;&ensp; 0 1 5   
 All you have to do is to find whether the matrix is symmetric or not. Elements of a matrix given
-in the input are$ −2^{32} ≤ M_{ij} ≤ 2^{32} and 0 < n ≤ 100$
+in the input are$$ −2^{32} ≤ M_{ij} ≤ 2^{32} and 0 < n ≤ 100$$
 
 
 ### Input
@@ -1181,7 +1259,7 @@ the political parties of our country. One of the parameters is a positive intege
 parameter) that denotes the average number of days between two successive hartals (strikes) called by
 the corresponding party. Though the parameter is far too simple to be flawless, it can still be used to
 forecast the damages caused by hartals. The following example will give you a clear idea:
-Consider three political parties. Assume $h_1$ = 3, $h_2$ = 4 and $h_3$ = 8 where $h_i$
+Consider three political parties. Assume $$h_1$$ = 3, $$h_2$$ = 4 and $$h_3$$ = 8 where $$h_i$$
 is the hartal parameter
 for party i (i = 1, 2, 3). Now, we will simulate the behavior of these three parties for N = 14 days.
 One must always start the simulation on a Sunday and assume that there will be no hartals on weekly
@@ -1199,7 +1277,7 @@ job is to determine the number of working days we lose in those N days.
 The first line of the input consists of a single integer T giving the number of test cases to follow.   
 The first line of each test case contains an integer N (7 ≤ N ≤ 3650) giving the number of days over
 which the simulation must be run. The next line contains another integer P (1 ≤ P ≤ 100) representing
-the number of political parties in this case. The ith of the next P lines contains a positive integer $h_i$
+the number of political parties in this case. The ith of the next P lines contains a positive integer $$h_i$$
 (which will never be a multiple of 7) giving the hartal parameter for party i (1 ≤ i ≤ P).
 
 ### Output
@@ -1230,7 +1308,7 @@ separate line.
 
 10526 Product
 --------------------
-The problem is to multiply two integers X, Y . (0 ≤ X, Y < $10^{250}$)
+The problem is to multiply two integers X, Y . (0 ≤ X, Y < $$10^{250}$$)
 
 ### Input
 
@@ -1251,6 +1329,78 @@ For each input pair of lines the output line should consist one integer the prod
 
         144
         4444444444444444444444444444
+
+10532 Ones
+--------------------
+Given any integer 0 ≤ n ≤ 10000 not divisible by 2
+or 5, some multiple of n is a number which in decimal
+notation is a sequence of 1’s. How many digits are in
+the smallest such a multiple of n?
+
+### Input
+
+A file of integers at one integer per line.
+
+### Output
+
+Each output line gives the smallest integer x > 0 such
+that $$p =∑^{x−1}_{i=0} 1 × 10^i = a × b$$, where a is the corresponding input integer, and b is an integer greater
+than zero.
+
+### Sample Input
+
+        3
+        7
+        9901
+        
+### Sample Output
+
+        3
+        6
+        12
+
+10533 The Trip
+--------------------
+A number of students are members of a club that travels annually to exotic locations. Their destinations
+in the past have included Indianapolis, Phoenix, Nashville, Philadelphia, San Jose, and Atlanta. This
+spring they are planning a trip to Eindhoven.   
+The group agrees in advance to share expenses equally, but it is not practical to have them share
+every expense as it occurs. So individuals in the group pay for particular things, like meals, hotels, taxi
+rides, plane tickets, etc. After the trip, each student’s expenses are tallied and money is exchanged so
+that the net cost to each is the same, to within one cent. In the past, this money exchange has been
+tedious and time consuming. Your job is to compute, from a list of expenses, the minimum amount of
+money that must change hands in order to equalize (within a cent) all the students’ costs.
+
+### Input
+
+Standard input will contain the information for several trips. The information for each trip consists of
+a line containing a positive integer, n, the number of students on the trip, followed by n lines of input,
+each containing the amount, in dollars and cents, spent by a student. There are no more than 1000
+students and no student spent more than $10,000.00. A single line containing 0 follows the information
+for the last trip.
+
+### Output
+
+For each trip, output a line stating the total amount of money, in dollars and cents, that must be
+exchanged to equalize the students’ costs.
+
+### Sample Input
+
+        3
+        10.00
+        20.00
+        30.00
+        4
+        15.00
+        15.01
+        3.00
+        3.01
+        0
+        
+### Sample Output
+
+        $10.00
+        $11.99
 
 10548 Ocean Deep! - Make it shallow!!
 --------------------
@@ -1400,7 +1550,7 @@ Each test case consists of one line containing an integers n (n ≤ 1000).
 ### Output
 
 For each test case, print one line containing the required number. This number will always fit into an
-integer, i.e. it will be less than $2^{31}$ − 1.
+integer, i.e. it will be less than $$2^{31}$$ − 1.
 
 
 ### Sample Input
@@ -1536,7 +1686,7 @@ of ‘0’
 Given two strings a and b we define a ∗ b to be their concatenation. For
 example, if a = ‘abc’ and b = ‘def’ then a ∗ b = ‘abcdef’. If we think of
 concatenation as multiplication, exponentiation by a non-negative integer is
-defined in the normal way: $a^0$ = ‘’ (the empty string) and $a^{(n+1)} = a ∗ (a^n)$.
+defined in the normal way: $$a^0$$ = ‘’ (the empty string) and $$a^{(n+1)} = a ∗ (a^n)$$.
 
 ### Input
 
@@ -1801,9 +1951,9 @@ N
 ------------------------------
 
 The Fibonacci numbers (0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, ...) are defined by the recurrence:   
-$F_0 = 0$   
-$F_1 = 1$   
-$F_i = F_{i−1} + F_{i−2}$ for all i ≥ 2   
+$$F_0 = 0$$   
+$$F_1 = 1$$   
+$$F_i = F_{i−1} + F_{i−2}$$ for all i ≥ 2   
 Write a program to calculate the Fibonacci Numbers.   
 
 ### Input
@@ -1883,6 +2033,44 @@ The text must be output exactly as it was input except that:
         is the question''.
         The programming contestant replied: ``I must disagree.
         To `C' or not to `C', that is The Question!''
+        
+22351 Quirksome Squares
+------------------------------
+The number 3025 has a remarkable quirk: if you split its decimal representation in two strings of equal
+length (30 and 25) and square the sum of the numbers so obtained, you obtain the original number:   
+$$(30 + 25)^2 = 3025$$
+The problem is to determine all numbers with this property having a given even number of digits.   
+For example, 4-digit numbers run from 0000 to 9999. Note that leading zeroes should be taken
+into account. This means that 0001 which is equal to $$(00 + 01)^2$$
+is a quirksome number of 4 digits.   
+The number of digits may be 2,4,6 or 8. Although maxint is only 32767 and numbers of eight digits
+are asked for, a well-versed programmer can keep his numbers in the range of the integers. However
+efficiency should be given a thought.
+
+### Input
+
+The input of your program is a textflle containing numbers of digits (taken from 2,4,6,8), each number
+on a line of its own
+
+### Output
+
+The output is a textfile consisting of lines containing the quirksome numbers (ordered according to the
+input numbers and for each input number in increasing order).   
+**Warning:** Please note that the number of digits in the output is equal to the number in the corresponding input line : leading zeroes may not be suppressed.
+
+### Sample Input
+
+        2
+        2
+
+### Sample Output
+
+        00
+        01
+        81
+        00
+        01
+        81
         
 22801 Doom's Day Algorithm
 ------------------------------
@@ -1988,7 +2176,7 @@ integer.
 23621 B2-Sequence
 ------------------------------
 
-A B2-Sequence is a sequence of positive integers $1 ≤ b_1 < b_2 < b_3 . . .$ such that all pairwise sums $b_i +b_j$ ,
+A B2-Sequence is a sequence of positive integers $$1 ≤ b_1 < b_2 < b_3 . . .$$ such that all pairwise sums $$b_i +b_j$$ ,
 where i ≤ j, are different.
 Your task is to determine if a given sequence is a B2-Sequence or not.
 
@@ -1997,7 +2185,7 @@ Your task is to determine if a given sequence is a B2-Sequence or not.
 Each test case starts with 2 ≤ N ≤ 100, the number of elements in a sequence. Next line will have N
 integers, representing the value of each element in the sequence. Each element bi
 is an integer such that
-$b_i ≤ 10000$. There is a blank line after each test case. The input is terminated by end of file (EOF).
+$$b_i ≤ 10000$$. There is a blank line after each test case. The input is terminated by end of file (EOF).
 
 
 ### Output
