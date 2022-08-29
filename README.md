@@ -1522,6 +1522,36 @@ Where x stands for the number of the input set (starting from 1).
         Run #4: Wrong Answer
         Run #5: Presentation Error
         Run #6: Presentation Error
+10557 Prime Time
+--------------------
+Euler is a well-known matematician, and, among many other things, he discovered that the formula
+$$n^2 + n + 41$$ produces a prime for 0 ≤ n < 40. For n = 40, the formula produces 1681, which is 41 ∗ 41.
+Even though this formula doesn’t always produce a prime, it still produces a lot of primes. It’s known
+that for n ≤ 10000000, there are 47,5% of primes produced by the formula!   
+So, you’ll write a program that will output how many primes does the formula output for a certain
+interval.
+
+### Input
+
+Each line of input will be given two positive integer a and b such that 0 ≤ a ≤ b ≤ 10000. You must
+read until the end of the file.
+
+### Output
+
+For each pair a, b read, you must output the percentage of prime numbers produced by the formula in
+this interval (a ≤ n ≤ b) rounded to two decimal digits.
+
+### Sample Input
+
+        0 39
+        0 40
+        39 40
+        
+### Sample Output
+
+        100.00
+        97.56
+        50.00
 
 10559 I Love Big Numbers!
 --------------------
@@ -2068,6 +2098,33 @@ The text must be output exactly as it was input except that:
         The programming contestant replied: ``I must disagree.
         To `C' or not to `C', that is The Question!''
         
+22161 Euclid Problem
+------------------------------
+From Euclid it is known that for any positive integers A and B there exist such integers X and Y that
+AX + BY = D, where D is the greatest common divisor of A and B. The problem is to find for given
+A and B corresponding X, Y and D.
+
+### Input
+
+The input will consist of a set of lines with the integer numbers A and B, separated with space
+(A, B < 1000000001).
+
+### Output
+
+For each input line the output line should consist of three integers X, Y and D, separated with space.
+If there are several such X and Y , you should output that pair for which |X| + |Y | is the minimal. If
+there are several X and Y satisfying the minimal criteria, output the pair for which X ≤ Y
+
+### Sample Input
+
+        4 6
+        17 17
+
+### Sample Output
+
+        -1 1 2
+        0 1 17
+
 22351 Quirksome Squares
 ------------------------------
 The number 3025 has a remarkable quirk: if you split its decimal representation in two strings of equal
@@ -2206,6 +2263,47 @@ integer.
         Optimal train swapping takes 1 swaps.
         Optimal train swapping takes 6 swaps.
         Optimal train swapping takes 1 swaps.
+
+23571 Smith Numbers
+------------------------------
+
+While skimming his phone directory in 1982, Albert Wilansky, a mathematician of Lehigh University,
+noticed that the telephone number of his brother-in-law H. Smith had the following peculiar property:
+The sum of the digits of that number was equal to the sum of the digits of the prime factors of that
+number. Got it? Smith’s telephone number was 493-7775. This number can be written as the product
+of its prime factors in the following way:   
+$$4937775 = 3 · 5 · 5 · 65837$$
+The sum of all digits of the telephone number is 4 + 9 + 3 + 7 + 7 + 7 + 5 = 42, and the sum of the
+digits of its prime factors is equally 3 + 5 + 5 + 6 + 5 + 8 + 3 + 7 = 42. Wilansky was so amazed by his
+discovery that he named this type of numbers after his brother-in-law: Smith numbers.
+As this observation is also true for every prime number, Wilansky decided later that a (simple and
+unsophisticated) prime number is not worth being a Smith number and he excluded them from the
+definition.   
+Wilansky published an article about Smith numbers in the Two Year College Mathematics Journal
+and was able to present a whole collection of different Smith numbers: For example, 9985 is a Smith
+number and so is 6036. However, Wilansky was not able to give a Smith number which was larger than
+the telephone number of his brother-in-law. It is your task to find Smith numbers which are larger than
+4937775.   
+
+### Input
+
+The input consists of several test cases, the number of which you are given in the first line of the input.
+Each test case consists of one line containing a single positive integer smaller than $$10^9$$
+.
+
+### Output
+
+For every input value n, you are to compute the smallest Smith number which is larger than n and
+print each number on a single line. You can assume that such a number exists.
+
+### Sample Input
+
+        1
+        4937774
+        
+### Sample Output
+
+        4937775
 
 23621 B2-Sequence
 ------------------------------
