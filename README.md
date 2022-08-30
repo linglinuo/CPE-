@@ -1209,6 +1209,35 @@ many square numbers are there between a and b (inclusive).
         2
         3
 
+10502 Product of digits
+--------------------
+For a given non-negative integer number N, find the minimal natural Q such that the product of all
+digits of Q is equal N.
+
+### Input
+
+The first line of input contains one positive integer number, which is the number of data sets. Each
+subsequent line contains one data set which consists of one non-negative integer number N (0 ≤ N ≤
+$$10^9$$).
+
+### Output
+
+For each data set, write one line containing the corresponding natural number Q or ‘-1’ if Q does not
+exist.
+
+### Sample Input
+
+        3
+        1
+        10
+        123456789
+        
+### Sample Output
+
+        1
+        25
+        -1
+
 10510 Super long sums
 --------------------
 The creators of a new programming language D++ have found out that whatever limit for SuperLongInt
@@ -1401,6 +1430,50 @@ exchanged to equalize the students’ costs.
 
         $10.00
         $11.99
+
+10544 Birthday Cake
+--------------------
+Lucy and Lily are twins. Today is their birthday. Mother
+buys a birthday cake for them. Now we put the cake onto a
+Descartes coordinate. Its center is at (0, 0), and the cake’s
+length of radius is 100.
+There are 2N (N is a integer, 1 ≤ N ≤ 50) cherries
+on the cake. Mother wants to cut the cake into two halves
+with a knife (of course a beeline). The twins would like to be
+treated fairly, that means, the shape of the two halves must
+be the same (that means the beeline must go through the
+center of the cake) , and each half must have N cherrie(s).
+Can you help her?
+Note: the coordinate of a cherry (x, y) are two integers.
+You must give the line as form two integers A, B (stands for
+Ax+By = 0) each number mustn’t in [−500, 500]. Cherries
+are not allowed lying on the beeline. For each dataset there
+is at least one solution.
+
+### Input
+
+The input file contains several scenarios. Each of them consists of 2 parts:
+The first part consists of a line with a number N, the second part consists of 2N lines, each line
+has two number, meaning (x, y). There is only one space between two border numbers. The input file
+is ended with N = 0.
+
+### Output
+
+For each scenario, print a line containing two numbers A and B. There should be a space between
+them. If there are many solutions, you can only print one of them.
+
+### Sample Input
+
+        2
+        -20 20
+        -30 20
+        -10 -50
+        10 -5
+        0
+        
+### Sample Output
+
+        0 1
 
 10548 Ocean Deep! - Make it shallow!!
 --------------------
