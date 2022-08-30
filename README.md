@@ -673,6 +673,45 @@ quotes).
         Boring!
         81 27 9 3 1
 
+10422 Is This Integration?
+------------------------------------
+In the image below you can see a square ABCD,
+where AB = BC = CD = DA = a. Four arcs
+are drawn taking the four vertexes A, B, C, D
+as centers and a as the radius. The arc that is
+drawn taking A as center, starts at neighboring
+vertex B and ends at neighboring vertex D. All
+other arcs are drawn in a similar fashion. Regions of three different shapes are created in
+this fashion. You will have to determine the
+total area if these different shaped regions.
+
+### Input
+
+The input file contains a floating-point number
+a (0 ≤ a ≤ 10000) in each line which indicates
+the length of one side of the square. Input is
+terminated by end of file.
+
+### Output
+
+For each line of input, output in a single line
+the total area of the three types of region (filled with different patterns in the image above).   
+These three numbers will of course be floating point numbers with three digits after the decimal
+point. First number will denote the area of the striped region, the second number will denote the total
+area of the dotted regions and the third number will denote the area of the rest of the regions.
+
+### Sample Input
+
+        0.1
+        0.2
+        0.3
+
+### Sample Output
+
+        0.003 0.005 0.002
+        0.013 0.020 0.007
+        0.028 0.046 0.016
+
 10423 The Largest/Smallest Box ...
 ------------------------------------
 In the following figure you can see a rectangular card. The width of the card is W and length of the
