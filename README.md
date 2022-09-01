@@ -828,6 +828,41 @@ the destination circle from the source circle.
         Case 2: 2
         Case 3: 3
 
+10452 Ants
+------------------------------------
+The first line of input contains one integer giving the number of cases that follow. The data for each
+case start with two integer numbers: the length of the pole (in cm) and n, the number of ants residing
+on the pole. These two numbers are followed by n integers giving the position of each ant on the pole
+as the distance measured from the left end of the pole, in no particular order. All input integers are
+not bigger than 1000000 and they are separated by whitespace.
+
+### Input
+
+The first line of input contains one integer giving the number of cases that follow. The data for each
+case start with two integer numbers: the length of the pole (in cm) and n, the number of ants residing
+on the pole. These two numbers are followed by n integers giving the position of each ant on the pole
+as the distance measured from the left end of the pole, in no particular order. All input integers are
+not bigger than 1000000 and they are separated by whitespace.
+
+### Output
+
+For each case of input, output two numbers separated by a single space. The first number is the earliest
+possible time when all ants fall off the pole (if the directions of their walks are chosen appropriately)
+and the second number is the latest possible such time.
+
+### Sample Input
+
+        2
+        10 3
+        2 6 7
+        214 7
+        11 12 7 13 176 23 191
+
+### Sample Output
+
+        4 8
+        38 207
+
 10453 Odd Sum
 ------------------------------------
 Given a range [a, b], you are to find the summation of all the odd integers in this range. For example,
